@@ -21,6 +21,7 @@
 //  9) {boolean}[resolveImmediately=false] if true, customElements.define all elements immediately after import promise resolved. This can lead to the blitz/flashing when web components already connect while others are not. shadow doms then possibly prevent css rules like ":not(:defined) {display: none;}" to be effective
 //  10) {boolean}[triggerImmediately=false] if true, does not wait for window load event but trigger immediately
 (function (self, document, baseUrl, directories) {
+  console.log("test joel develop branch")
   /**
    * Directory sets selector and url by which a reference between tagName/selector and url/file can be done (customElements.define(name aka. tagName, constructor))
    * The following two options are available:
